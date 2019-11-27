@@ -77,10 +77,10 @@ input[type=submit] {
       border-radius: 25px;
       background-color: rgb(255, 255, 255, 0.25);
       position: absolute;
-      height: 500px;
-      width: 800px;
-      top: 24.5%;
-      left: 57%;
+      height: 50%;
+      width: 40%;
+      margin-top: 12.5%;
+      margin-left: 57%;
       filter: alpha(opacity=50);
       /* For IE8 and earlier */
 
@@ -99,7 +99,7 @@ input[type=submit] {
       filter: alpha(opacity=50);
       border-radius: 10px;
       box-sizing: border-box;
-      width: 32%;
+      width: 70%;
       position: absolute;
       margin-left: 1090px;
       margin-top: 450px;
@@ -183,28 +183,30 @@ input[type=submit] {
             <label for="usrname"></label>
             <input type="text" required placeholder="    STUDENT ID"id="usrname" name="usrname" pattern="(?=.*\d).{10,}" required style=" font-size:24px;position: absolute ; right: 30%; top: 50%;"; >
         
+            
             <label for="psw"></label>
             <input type="password" required placeholder="    IDENTIFICATION CARD"id="psw" name="psw" pattern="(?=.*\d).{13,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required style="font-size:24px; left: 8%; top: 130px;" ;> -->
+            <div>
+                    <i class="material-icons" style="font-size :70px; position: absolute ;left: 5%; top:30%;">
+                            subtitles
+                        
+                          </i>
+                          <x class="material-icons" style="font-size:70px; position: absolute ;left: 5%; top: 50%;">
+                            lock
+                          </x>
+                <form action="login/public_html/profile.html">
+                    <label for="usrname"></label>
+                    <input type="text" required placeholder="    STUDENT ID"id="usrname" name="usrname" pattern="(?=.*\d).{10,}" required style=" font-size:24px;position: absolute ; margin-left: 20%; margin-top: 20.5%;"; >
+                
+                    <label for="psw"></label>
+                    <input type="password" required placeholder="    IDENTIFICATION CARD"id="psw" name="psw" pattern="(?=.*\d).{13,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required style="font-size:24px;  margin-left: 20%; margin-top: 35.5%;" ;>
+                </form>
+                </div>
             <button  type="submit" value="Submit" style="border-radius: 5px; border: 200px; position: absolute ;top : 75%; left:45%; font:  30px Kanit, sans-serif; ">ยืนยัน</button>
             
           <!-- </form> -->
   </div>
-  <div>
-        <i class="material-icons" style="font-size :70px; position: absolute ;left: 60%; top: 40%;">
-                subtitles
-            
-              </i>
-              <x class="material-icons" style="font-size:70px; position: absolute ;left: 60%; top: 51%;">
-                lock
-              </x>
-    <form action="login/public_html/profile.html">
-        <label for="usrname"></label>
-        <input type="text" required placeholder="    STUDENT ID"id="usrname" name="usrname" pattern="(?=.*\d).{10,}" required style=" font-size:24px;position: absolute ; left:  5%; top: -6.4%;"; >
-    
-        <label for="psw"></label>
-        <input type="password" required placeholder="    IDENTIFICATION CARD"id="psw" name="psw" pattern="(?=.*\d).{13,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required style="font-size:24px; left: 5%; top:5%;" ;>
-    </form>
-    </div>
+  
       <!-- <div id="message">
   <h3>Password must contain the following:</h3>
   <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
