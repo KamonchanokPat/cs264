@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .w3-button {
+        width: 200px;
+        height: 80px;
+    }
+
+    body {
+        background-image: url('Standard_front.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    
+</style>
+
+<head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .toprighticon{
+      position: absolute;
+      right: 0;
+      height: 91px;
+    }
+        .centeredd {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img.center {
+            position: relative;
+            left: 9.5%;
+
+            bottom: -20px;
+            width: 80%;
+            text-align: center;
+
+        }
+
+        .btn-group .button {
+            background-color: gray;
+            /* Green */
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 38px;
+            cursor: pointer;
+            width: 200px;
+            height: 70px;
+            display: block;
+            position: relative;
+            bottom: -50px;
+        }
+
+
+        .btn-group .button:not(:last-child) {
+            position: relative;
+            top: 30px;
+            border-bottom: none;
+            /* Prevent double borders */
+        }
+
+        .btn-group .button:hover {
+            position: relative;
+            top: 30px;
+            background-color: #898d89;
+
+        }
+
+
+
+        div.absolute {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 0px;
+            height: 0px;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn:hover {
+            background-color: black;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border: 2px solid gray;
+            text-align: middle;
+        }
+
+        th {
+
+            border: 2px solid gray;
+           
+            border-bottom: 2px solid gray;
+           
+        }
+
+        td {
+            padding: 15px;
+            border: 0px solid gray;
+            border-left: 2px solid gray;
+
+        }
+        td.pop {
+            padding: 5px;
+            border: 0px solid gray;
+            border-left: 2px solid gray;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 150%;
+        }
+
+        th {
+            height: 50px;
+            font:  20px Kanit, sans-serif;
+        }
+
+        div.settable {
+            position: absolute;
+            top: 10%;
+            left: 15%;
+
+        }
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+            width: 100%;
+            }
+        }
+        .close {
+            position: absolute;
+            right: 3%;
+            top: 5%;
+            font-size: 20px;
+            font-weight: bold;
+            color: #f1f1f1;
+        }
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 30%;
+            top: 30%;
+            width: 60%; /* Full width */
+            height: 60%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: #888;
+            padding-top: 50px;
+        }
+        .close {
+            position: absolute;
+            right: 5%;
+            top: 3%;
+            font-size: 40px;
+            font-weight: bold;
+            color: #f1f1f1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="absolute" style="opacity: 0.5;height:90px; width: 1925px; background-color:#f8b720;">
+
+    </div>
+    <img class="toprighticon "type="image" src="userbox.png">
+  <input class="toprighticon" type="image" src="01.jpg" alt="Submit" 
+        style="position: absolute; top: 30px; right:400px; height: 30px; width: 48px;">
+  <input class="toprighticon" type="image" src="02.png" alt="Submit" width="47" height="30"
+        style="position: absolute; top: 30px; right:320px; height: 30px; width: 48px;">
+        <a class="toprighticon" href="http://localhost:8383/login/profile.html" style="font: 14px Kanit, sans-serif;position: absolute; right: 22px; top: 20px;">นาน เอบีซี กอเอ่ยกอไก่</a>
+        <a class="toprighticon" href="http://localhost:8383/login/login.html" style="color: red; font: 14px Kanit, sans-serif;position: absolute; right: 50px; top: 50px;">ออกจากระบบ</a>
+        <i class="material-icons"
+        style=" font-size :50px; position: absolute ; right:200px; top: 20px;">
+        account_circle
+      </i>
+  </img>
+    <div class="absolute" style="height:1150px; width: 200px; background-color:rgb(175, 170, 170);">
+        <div class="absolute" style="height:200px; width: 200px; background-color:Gray;">
+            <img class="center" src="THAMMASART_LOGO.png" width="130" height="150">
+            <div class="btn-group">
+                    <!-- <a class="absolute" href="https://www.w3schools.com/html/">Visit our HTML tutorial</a> -->
+                    <p><a href="http://localhost:8383/login/profile.html"><button class="botton w3-button w3-gray;position : absolute ;" 
+            
+                        style="font: 64px Kanit, sans-serif;position: relative ; top: 30px;font-size:22px;">ประวัติส่วนตัว</button></a>
+                        <a href="http://localhost:8383/login/regis.html"><button class="botton w3-button w3-gray;"
+                          style="font: 64px Kanit, sans-serif;position: relative ; top: 30px; font-size: 22px;">จดทะเบียน</button></a>
+                        <button class="botton w3-button w3-gray; font: 64px Kanit, sans-serif;font-size: 38px;"
+                          style="position: relative ; top: 30px;font: 64px Kanit, sans-serif;font-size: 22px;">ชำระเงิน</button>
+                        <button class="botton w3-button w3-gray;font: 64px Kanit, sans-serif;font-size: 38px;"
+                          style="position: relative ; top: 30px;font: 64px Kanit, sans-serif;font-size: 22px;">ติดตามผล</button></a></p>
+                    </div>
+        </div>
+    </div>
+        <div class="settable">
+            <h1 style="font:  64px Kanit, sans-serif;">รายวิชาที่ต้องการจดทะเบียน</h1>
+            <h3 style="font:  30px Kanit, sans-serif;">รายวิชาที่มีสิทธิจดทะเบียน</h3>
+            <div class="search-input">
+                <input style="border-radius: 5px;" type="text" id="search-box" align='center' placeholder="รหัส/ชื่อวิชา">
+                <button id="btn-search" style="font:  Kanit, sans-serif; border-radius: 5px; height: 50%; width: 6%;" ><i class="fa fa-search" aria-hidden="true">ค้นหา</i></button>
+            </div>
+            <div>
+                <table border="2" bgcolor="WhiteSmoke" style=" opacity: 0.5;">
+                    <tr>
+                        <th>เลือก</th>
+                        <th>รหัสวิชา</th>
+                        <th>ชื่อวิชา</th>
+                        <th>หน่วยกิต</th>
+                        <th>Sec/Gr</th>
+                        <th>จดทะเบียนแบบ</th>
+                        <th>วันเวลา</th>
+                    </tr>
+
+                    <tr align='center'>
+                        <td><input type="checkbox" name="CS300"></input></td>
+                        <td>CS300</td>
+                        <td align='left'>SEMINAR IN PRACTICAL PROGRAMMING</td>
+                        <td>1</td>
+                        <td>650001</td>
+                        <td>Pass/Fail</td>
+                        <td>MO 09:30-12:30</td>
+                    </tr>
+
+                    <tr align='center'>
+                        <td><input type="checkbox" name="CS101"></td>
+                        <td>CS101</td>
+                        <td align='left'>DISCRETE STRUCTURES</td>
+                        <td>3</td>
+                        <td>650001</td>
+                        <td>Credit</td>
+                        <td>TU 13:30-15:00<br />
+                            TH 13:30-15:00<br />
+                        </td>
+                    </tr>
+
+                    <tr align='center'>
+                        <td><input type="checkbox" name="ST326"></td>
+                        <td>ST326</td>
+                        <td align='left'>APPLIED PROBABILITY</td>
+                        <td>3</td>
+                        <td>650001</td>
+                        <td>Credit</td>
+                        <td>WE 11:00-12:30<br />
+                            FR 11:00-12:30<br />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p>หมายเหตุ : กด  &nbsp;&nbsp;√&nbsp;&nbsp; เพื่อทำการ<g style="color: red;">เลือกหรือยกเลิก</g>รายวิชาที่ต้องการจดทะเบียน</p>
+            </div>
+            <div>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;border-radius: 5px;">ยืนยันการจดทะเบียน</button>
+            </div>&nbsp;&nbsp;
+            <div id="id01" class="modal" style="border-radius: 15px; height: 40%; top: 25%; left: 20%;">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" style="position: absolute; right: 5%; top: 5%;">&times;</span>
+                        <form class="modal-content" action="/action_page.php" style="border-radius: 25px;">
+                            <div class="register">
+                                <h1 style="font:  30px Kanit, sans-serif;border-radius: 25px; position: relative; top :5%; left: 10%;">ยืนยันการจดทะเบียน</h1>
+                                <table border="2" bgcolor="WhiteSmoke" style=" opacity: 0.5; height: 50%; width: 80%; position: relative; top :30%; left:10%; ">
+                                        <tr>
+                                            <th>รหัสวิชา</th>
+                                            <th>ชื่อวิชา</th>
+                                            <th>หมายเหตุ</th>
+                    
+                                        </tr>
+                                        <tr align='center'>
+                                            <td class="pop">CS300</td>
+                                            <td class="pop" align='left'>SEMINAR IN PRACTICAL PROGRAMMING</td>
+                                            <td class="pop"><input type="text" id="search-box" placeholder="หมายเหตุ"><g style="color: red;"">&nbsp;*</g></td>
+                                        </tr>
+                                        <tr align='center'>
+                                            <td class="pop">CS101</td>
+                                            <td class="pop" align='left'>DISCRETE STRUCTURES</td>
+                                            <td class="pop"><input type="text" id="search-box" placeholder="หมายเหตุ" ><g style="color: red;"">&nbsp;*</g></td>
+                                        </tr>
+                                    </table>
+                            <div align='center'>
+                                <button type="submit" class="signupbtn" style="border-radius: 5px;position: absolute; top:  70%; left:50%;font:   Kanit, sans-serif;">ยืนยัน</button>
+                            </div>
+                            </div>
+                        </form>
+                </div>        
+            </div>
+            <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                      if (event.target == modal) {
+                        modal.style.display = "none";
+                      }
+                    }
+            </script>
+    </body>
+    
+    
+    </html>
